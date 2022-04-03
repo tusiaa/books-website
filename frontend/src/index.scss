@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 100px;
+  border: 1px solid rgb(40, 13, 71);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+
+  .nav-bar-left, .nav-bar-left2 {
+    float: left;
+  }
+  .nav-bar-right {
+    float: right;
+  }
+
+  .nav-element {
+    display: block;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 5px;
+  }
+
+  .nav-logo{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 5px;
+    padding-right: 0;
+
+  }
+
+  .nav-element:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .nav-sort{
+    padding-left: 0;
+  }
+  .dropdown{
+    padding: 14px 10px;
+  }
+
+  .dropdown-content {
+    display: none;
+    top: 57px;
+    right: 245px;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  
+
+    button {
+      color: white;
+      width: 95%;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    button:hover {background-color: #111;}
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+.active {
+  background-color: #724caf;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  border: solid #333;
+  padding: 10px 20px;
+  margin: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #111;
+  border: solid #111;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+}
+
+.pagination {
+  max-width: 80%;
+  margin: 10px auto;
+  min-height: 30px;
+  text-align: center;
+
+  button {
+    background: inherit;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+
+  label {
+    float: right;
+    margin-top: 15px;
+  }
+
+  select {
+    float: right;
+    min-width: 10px;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+}
+
+.fav {
+  border-color: #724caf;
+  color: #724caf;
+  padding: 10px 20px;
+  margin: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.fav:hover {
+  background: #724caf;
+  opacity: 0.8;
+  color: white;
+}
+
+.fav2 {
+  background: #724caf;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.book, .book2 {
+  position: relative;
+  min-height: 172px;
+  background: whitesmoke;
+  margin: 20px auto; 
+  padding: 10px 15px;
+  border: 1px solid rgb(40, 13, 71);
+  border-radius: 5px;
+  
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+  }
+
+  .basics {
+    margin-left: 20px; 
+  }
+
+  .okladka {
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+    height: 150px;
+  }
+
+  .okladka2 {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: 300px;
+  }
+
+  button {
+    float: right;
+  }
+
+  .first {
+    float: left;
+  }
+
+  .col1 {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+}
+
+.rating {
+  display: inline;
+  float: left;
+  width: 200px;
+  min-height: 40px;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid rgb(40, 13, 71);
+  padding: 9px;
+  border-radius: 5px;
+  text-align: center;
+
+  .star {
+    margin: auto 3px;
+    width: 30px;
+    height: 30px;
+  }
+  .star-rating {
+    display: none;
+    margin: auto 3px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.rating:hover {
+  .star {
+    display: none;
+  }
+
+  .star-rating {
+    display: inline;
+    opacity: 0.3;
+  }
+
+  .star-rating:hover {
+    opacity: 1;
+  }
+}
+
+.form-control {
+  text-align: center;
+
+  div {
+    display: inline-block;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  button {
+    min-width: 10%;
+  }
+
+  input[type=text] {
+    display: inline-block;
+    width: 79.5%;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+
+  input[type=checkbox] {
+    position: relative;
+    top: 6px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  select {
+    display: inline-block;
+    min-width: 100px;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+
+}
+
+.AddEditForm {
+  overflow: auto;
+
+  input {
+    align-self: center;
+    display: block;
+    float: right;
+    width: 70%;
+    height: 40px;
+    margin: 5px auto;
+    padding: 3px 7px;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+
+  label {
+    width: 25%;
+    display: inline-block;
+    min-height: 30px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 20px;
+  }
+
+  textarea {
+    flex-direction: row;
+    display: block;
+    float: right;
+    width: 70%;
+    min-height: 80px;
+    margin: 5px auto;
+    padding: 3px 7px;
+    font-size: 17px;
+    border-radius: 5px;
+    resize: vertical;
+  }
+
+  div {
+    min-width: 25%;
+    color: red;
+    padding: 3px 7px;
+    font-size: 17px;
+    margin: 5px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .form-control input[type=text] {
+    width: 73%;
+  }
+
+  .pagination label {
+    display: none;
+  }
+
+  .buttons {
+    min-height: 65px;
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 660px) {
+
+  .nav-bar .el {
+    text-align: center;
+    overflow: auto;
+    
+    .nav-bar-left {
+      display: inline-block;
+    }
+
+    .nav-element{
+      display: inline-block; 
+    }
+    .dropdown, .nav-sort{
+      float: right;
+      padding-top: 0;
+      padding-bottom: 5px;
+
+      .dropdown-content{
+        top: 99px;
+        right: 0px;
+        width: 152px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .form-control input[type=text] {
+    width: 60%;
+  }
+
+  .AddEditForm {
+    overflow: hidden;
+
+    label, input, textarea {
+      width: 100%;
+      float: none;
+    }
+  }
+
+  .book2 {
+    text-align: center;
+    
+    .col1{
+      text-align: center;
+      width: 100%;
+      float: none;
+      min-height: 400px;
+
+      .okladka2, .rating, h3 {
+        float: none;
+        display: block;
+        margin: 10px auto;
+      }
+    }
+
+    button {
+      float: none;
+      margin: 5px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+  .form-control {
+    input[type=text], button, select, div {
+      width: 100%;
+    }
+  }
+
+  .pagination select {
+    float: none;
+  }
+
+  .nav-bar .el {
+    .nav-bar-left{
+      display: block;
+      float: none;
+      padding-top: 5px;
+      padding-bottom: 0;
+    }
+    .nav-bar-right{
+      display: inline;
+      float: none;
+    }
+    .dropdown, .nav-sort{
+      float: right;
+      .dropdown-content{
+        top: 134px;
+      }
+    }
+  }
+
+  .book { 
+    text-align: center;
+    .okladka {
+      float: none;
+      margin: 0;
+    }
+    .fav, .fav2 {
+      float: none;
+      margin: 0;
+    }
+    
+  }
+
+}
